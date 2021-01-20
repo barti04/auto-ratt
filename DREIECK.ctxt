@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=DREIECK
+comment1.params=oben1Neu\ oben2Neu\ links1Neu\ links2Neu\ rechts1Neu\ rechts2Neu\ farbeNeu
+comment1.target=DREIECK(int,\ int,\ int,\ int,\ int,\ int,\ int)
+comment2.params=farbeNeu
+comment2.target=void\ fuelle(int)
+comment3.params=
+comment3.target=void\ fuelle()
+comment4.params=
+comment4.target=void\ zeichne()
+numComments=5

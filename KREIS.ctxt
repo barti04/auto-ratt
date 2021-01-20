@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=KREIS
+comment1.params=
+comment1.target=KREIS()
+comment10.params=ms
+comment10.target=void\ warte(int)
+comment2.params=xNeu\ yNeu\ radiusNeu\ farbeNeu
+comment2.target=KREIS(int,\ int,\ int,\ int)
+comment3.params=xNeu\ yNeu
+comment3.target=void\ setzeMitte(int,\ int)
+comment4.params=
+comment4.target=void\ fuelle()
+comment5.params=farbeNeu
+comment5.target=void\ fuelle(int)
+comment6.params=farbeNeu
+comment6.target=void\ setzeFarbe(int)
+comment7.params=nachRechts\ nachUnten
+comment7.target=void\ verschiebe(int,\ int)
+comment8.params=
+comment8.target=double\ gibUmfang()
+comment9.params=
+comment9.target=double\ gibFlaeche()
+numComments=11
