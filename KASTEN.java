@@ -51,4 +51,9 @@ public class KASTEN
     
     public void warte(int ms)
     {   WINDOW.gibFenster().wait(ms);}
+    
+    public int gibExt()
+    {
+        return this.links + this.breite;
+    }
 }

@@ -22,6 +22,17 @@ public class DREIECK
     
     public void zeichne()
     {   WINDOW.gibFenster().fuelleDreieck(oben1,oben2,links1,links2, rechts1, rechts2, farbe);    }
+    
+    public void verschiebe(int nachRechts, int nachUnten)
+    {   oben1 = oben1 + nachRechts;
+        oben2 = oben2 + nachUnten;
+    
+        links1 = links1 + nachRechts;
+        links2 = links2 + nachUnten;
+        
+        rechts1 = rechts1 + nachRechts;
+        rechts2 = rechts2 + nachUnten;
+    }
    
     
 }

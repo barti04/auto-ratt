@@ -43,4 +43,8 @@ public class KREIS
     public void warte(int ms)
     {   WINDOW.gibFenster().wait(ms);}
 
+    public int gibExt()
+    {
+        return this.xMitte + this.radius;
+    }
 }

@@ -53,7 +53,59 @@ public class FIGUR
         //Paint window
         window.fuelle();
     }
+    
+    public void leeren()
+    {
+        WINDOW.gibFenster().loescheAlles();
+    }
+    
+    public void verschieben(int x, int y)
+    {
+        
+        
+        //move weels
+        wel1.verschiebe(x, y);
+        wel2.verschiebe(x, y);
+        wel3.verschiebe(x, y);
+        
+        //move body
+        body.verschiebe(x, y);
+        bodyFront.verschiebe(x, y);
+        
+        //move strips
+        Stripe1.verschiebe(x, y);
+        Stripe2.verschiebe(x, y);
+        Stripe3.verschiebe(x, y);
+        
+        //move window
+        window.verschiebe(x, y);
+        leeren();
+        zeichne(); 
+    }
+    
+    public void verschieben()
+    {   
+        leeren();       
+        verschieben(10, 0);      
+        zeichne();              
+    }
+    
+    public void verschiebenBisRand()
+    {
+        int ext;
+        
+         for (int i=0; i<200; i++)
 
+        {
+
+           ext = bodyFront.gibExt();
+
+           if (ext>1000){verschieben(-1000, 0);}
+
+           verschieben(10, 0);
+        }          
+    }
+    
     public void text()
     {String t="(400|100)";
         WINDOW.gibFenster().zeichneText(t,400,100);
