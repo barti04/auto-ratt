@@ -8,4 +8,6 @@ comment3.params=
 comment3.target=void\ fuelle()
 comment4.params=
 comment4.target=void\ zeichne()
-numComments=5
+comment5.params=nachRechts\ nachUnten
+comment5.target=void\ verschiebe(int,\ int)
+numComments=6

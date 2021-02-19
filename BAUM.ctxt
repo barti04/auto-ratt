@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=BAUM
+comment1.params=
+comment1.target=BAUM()
+comment2.params=
+comment2.target=void\ zeichne()
+comment3.params=
+comment3.target=void\ paintApple()
+comment4.params=x\ y
+comment4.target=void\ verschieben(int,\ int)
+comment5.params=
+comment5.target=void\ dropApple()
+comment6.params=
+comment6.target=void\ leeren()
+numComments=7

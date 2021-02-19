@@ -13,25 +13,29 @@ public class FIGUR
     private KASTEN Stripe1;
     private KASTEN Stripe2;
     private KASTEN Stripe3;
+    private BAUM tree;
 
     FIGUR()
     {   
         //Weels
-        wel1 = new KREIS(200, 300, 30, 9);
-        wel2 = new KREIS(500, 300, 30, 9);
-        wel3 = new KREIS(625, 300, 30, 9);
+        wel1 = new KREIS(200, 500, 30, 9);
+        wel2 = new KREIS(500, 500, 30, 9);
+        wel3 = new KREIS(625, 500, 30, 9);
         
         //Body
-        body = new KASTEN(125, 75, 450, 200, 7);
-        bodyFront = new KASTEN(575, 125, 100, 150, 7);
+        body = new KASTEN(125, 275, 450, 200, 7);
+        bodyFront = new KASTEN(575, 325, 100, 150, 7);
         
         //Window
-        window = new KASTEN(450, 110, 80, 75, 1);
+        window = new KASTEN(450, 310, 80, 75, 1);
         
         //Stripes
-        Stripe1 = new KASTEN(125, 150, 550, 10, 4);
-        Stripe2 = new KASTEN(125, 175, 550, 10, 4);
-        Stripe3 = new KASTEN(125, 200, 550, 10, 4);
+        Stripe1 = new KASTEN(125, 350, 550, 10, 4);
+        Stripe2 = new KASTEN(125, 375, 550, 10, 4);
+        Stripe3 = new KASTEN(125, 400, 550, 10, 4);
+        
+        //tree
+        tree = new BAUM();
     }
 
     public void zeichne()
@@ -52,6 +56,10 @@ public class FIGUR
         
         //Paint window
         window.fuelle();
+        
+        //Paint tree
+        tree.zeichne();
+        tree.paintApple();
     }
     
     public void leeren()
@@ -80,14 +88,22 @@ public class FIGUR
         //move window
         window.verschiebe(x, y);
         leeren();
-        zeichne(); 
+        zeichne();
     }
     
     public void verschieben()
     {   
-        leeren();       
-        verschieben(10, 0);      
-        zeichne();              
+        verschieben(-600, 0);
+        for (int i=0; i<58; i++)
+        {
+
+           verschieben(10, 0);
+        }
+        for (int i=0; i<25; i++)
+        {
+           tree.verschieben(0, i);
+           zeichne();
+        }   
     }
     
     public void verschiebenBisRand()
@@ -95,7 +111,6 @@ public class FIGUR
         int ext;
         
          for (int i=0; i<200; i++)
-
         {
 
            ext = bodyFront.gibExt();
