@@ -42,10 +42,6 @@ public class BAUM
         paintApple();
     }
     
-    public void dropApple()
-    {
-        
-    }
     
     public void leeren()
     {
